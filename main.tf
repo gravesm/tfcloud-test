@@ -16,5 +16,5 @@ terraform {
 }
 
 resource "aws_iam_user" "default" {
-  name = "tf-cloud-${workspace}"
+  name = "tf-cloud-${var.workspace}"
 }
