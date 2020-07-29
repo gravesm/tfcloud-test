@@ -4,6 +4,8 @@ provider "aws" {
 }
 
 resource "aws_iam_user" "default" {
-  name        = "tf-cloud-${var.workspace}"
-  description = "Testy McTesterson"
+  name = "tf-cloud-${var.workspace}"
+  tags = {
+    foo = "bar"
+  }
 }
