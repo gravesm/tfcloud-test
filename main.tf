@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 resource "aws_iam_user" "default" {
-  name = "tf-cloud-${var.workspace}"
+  name = "tf-cloud-test-${var.workspace}"
   tags = {
     foo = "bar"
   }
